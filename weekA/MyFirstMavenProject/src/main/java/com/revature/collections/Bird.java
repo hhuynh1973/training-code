@@ -7,14 +7,21 @@ public abstract class Bird {
 	private String name;
 	private String color;
 	private boolean feathered;
+	private long weight;
 	
 	//chaining overloaded constructors
 	
-	public Bird(String name, String color, boolean feathered) {
+	public Bird(String name, String color, boolean feathered, long weight) {
 		super();
 		this.name = name;
 		this.color = color;
 		this.feathered = feathered;
+		// we want to apply our setter logic here as well:
+		this.setWeight(weight);
+	}
+	
+	public Bird(String name, String color, boolean feathered) {
+		this(name, color, feathered, 6L);
 	}
 	
 	public Bird(String name, String color) {
@@ -65,11 +72,22 @@ public abstract class Bird {
 		this.feathered = feathered;
 	}
 
-	@Override
-	public String toString() {
-		return "Bird [name=" + name + ", color=" + color + ", feathered=" + feathered + "]";
+	public long getWeight() {
+		return weight;
+	}
+
+	public void setWeight(long weight) {
+		if(weight < 0) {
+			throw new NegativeMassException();
+		}
+		this.weight = weight;
 	}
 	
+	@Override
+	public String toString() {
+		return "Bird [name=" + name + ", color=" + color + ", feathered=" + feathered + ", weight=" + weight + "]";
+	}
+
 	// hashCode is usually a number unique to each object
 	// the only actual rule is that "if two objects are equal,
 	// 		they need to have the same hashCode".
