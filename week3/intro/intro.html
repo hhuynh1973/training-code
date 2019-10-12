@@ -1,0 +1,175 @@
+<!-- HTML syntax for comments is the same as XML -->
+<!-- Use Ctrl + / to comment a line -->
+
+<!-- This means we're using HTML5 -->
+<!DOCTYPE html>
+<html>
+<!-- Inside of html we'll have a head and a body -->
+
+<head>
+    <!-- meta-information goes here -->
+    <!-- By convention, we start with meta tags -->
+    <!-- fourth element, first attribute, self-closing tag -->
+    <meta charset="utf-8" />
+
+    <title>My First(?) Webpage</title>
+
+    <!-- Other tags that can go here: more meta tags,
+        author, description, links to style or JS -->
+    
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- content goes here -->
+    <!-- We can just write text, but don't! -->
+
+    This is fine.
+
+    <p>
+        If you're just writing text, put it in a p tag
+        That makes it a "paragraph"
+    </p>
+
+    <!-- A quick tour of tags: -->
+    <h1>Header 1, the "largest"</h1>
+
+    <h6>Header 6, the "smallest"</h6>
+
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Yuri_Knorozov.jpg" alt="Image Not Loaded :(" />
+    <img title="Our Photo" src="Yuri_Knorozov.jpg" alt="Image not found" />
+
+    <!-- Super important: a tags, "anchor" tags
+    These are hpow we make links! -->
+    <a href="https://www.google.com">Link to Google</a>
+
+    <!-- Lots of options for structured content:
+        lists, tables, etc -->
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item C</li>
+    </ol>
+
+    <ul>
+        <li>Unordered List (1)</li>
+        <li>
+            Unordered List (2)
+        </li>
+    </ul>
+
+    <!-- Tables: -->
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+            <tr>
+                <td>Cell A</td>
+                <td>Cell B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Whitespace isn't important -->
+    <p>Hi
+        From
+        <br />
+        P
+        <br />
+        Tag
+    </p>
+
+    <blockquote>
+        A long amount of quoted text goes in a blockquote.
+    </blockquote>
+
+    <!-- Inline v block display: -->
+    <ul>
+        <li>This is <em>Emphasized</em></li>
+        <li>This is <strong>Strong</strong></li>
+        <li>This is <u>Underlined</u></li>
+    </ul>
+
+    <!-- Two essential elements (pre-HTML5) are: -->
+    <div class="myclass">
+        <p>div is generic block element</p>
+        <p>span <span>is generic inline element</span></p>
+    </div>
+
+    <select>
+        <option>Option A</option>
+        <option>Option B</option>
+        <option>Option III</option>
+    </select>
+
+    <!-- HTML5 introduced two new types of tags -->
+    <!-- "flash-replacement" tags -->
+    <!-- each of these works with a src and can be 
+        modified/interacted with using JS -->
+    <video src="http://dl5.webmfiles.org/elephants-dream.webm" controls="controls"></video>
+    <video src="http://dl5.webmfiles.org/elephants-dream.webm"></video>
+
+    <audio autoplay controls></audio>
+    <canvas></canvas>
+
+    <!-- shorthand for attributes -->
+    <!-- if you just type the attribute name without
+    a value, the value IS the attribute name -->
+
+    <!-- Other new HTML5 tags: Semantic tags -->
+    <!-- Like divs, but with innate meaning -->
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section>Section</section>
+    <main>Main content</main>
+    <aside>Asides</aside>
+
+    <!-- One more IMPORTANT component: forms! -->
+    <form method="GET" action="www.google.com">
+        <input type="text" name="textInput">
+
+        <input type="number" name="numberInput">
+
+        <input type="file" name="fileInput">
+
+        <!-- label field with label elements -->
+        <label>Username:
+            <input type="username" name="user">
+        </label>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass">
+
+        <input type="email" name="mail" placeholder="myEmail@Example.com">
+
+        <ul>
+            <li>
+                <label>1
+                    <input type="radio" name="myRadio" value="1">
+                </label>
+            </li>
+            <li>
+                <label>2
+                    <input type="radio" name="myRadio" value="2">
+                </label>
+            </li>
+            <li>
+                <label>3
+                    <input type="radio" name="myRadio" value="3">
+                </label>
+            </li>
+        </ul>
+
+        <input type="text" name="myValidText" placeholder="hello" minlength="4" maxlength="10" required>
+
+        <input type="submit">
+    
+    </form> </body> </html>

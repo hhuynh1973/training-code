@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>DOM Manipulation</title>
+</head>
+
+<body>
+  <nav class="navbar nav-pills navbar-expand-sm">
+    <a class="navbar-brand" href="index.html">JS Pages</a>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="template.html">Template Page</a>
+    <a class="nav-link" href="events.html">Events</a>
+    <a class="nav-link active" href="DOM.html">DOM Manipulation</a>
+    <a class="nav-link" href="api-query.html">SWAPI Query</a>
+    <a class="nav-link" href="closure.html">Closure</a>
+
+  </nav>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-9">
+        <h1>JS Demo Pages</h1>
+        <lead>Exploring JS a page at a time!</lead>
+      </div>
+      <div class="col-3">
+        <img class="img-fluid" src="jslogo.png" alt="img not found">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>On this page, open the console.</h2>
+      </div>
+      <div class="col-md-8">
+        <p>
+          We can manipulate the DOM by selecting elements and
+          modifying their attributes OR their contents. We can
+          also add event listeners for interactivity.
+        </p>
+        <div class="dom-demo">
+          <h1 id="main-text">
+            This is the starting text
+          </h1>
+          <button class="btn">Click Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="DOM.js"></script>
+</body>
+
+</html>

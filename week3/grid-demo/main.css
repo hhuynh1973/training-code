@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+/* Modify existing Bootstrap style */
+.jumbotron {
+    padding: 10px;
+}
+
+/* Keep all demo styles inside the demo container: */
+.demo p {
+    display: block;
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.demo .row {
+    margin: 5px 0px;
+}
+
+/* any div inside .demo, but not if its class row */
+.demo div:not(.row) {
+    border: 3px dashed #4f806d;
+}
+
+/* This does similar things: divs inside .row inside .demo */
+/* .demo .row div {
+    border: 3px dashed red;
+} */
